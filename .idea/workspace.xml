@@ -3,22 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3e3f4d8a-529d-4d7e-8301-098d71613c2b" name="Default Changelist" comment="alpha 2019-07-17_13-24-39">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automationpractice/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DriverTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automationpractice/WebDriverFactory/engine/DriverTypes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/OrderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automationpractice/pages/OrderPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automationpractice/pages/Page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automationpractice/pages/SearchPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WebDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automationpractice/WebDriverFactory/engine/WebDriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Task02Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automationpractice/Task02Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Config.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DriverTypes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/OrderPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Page.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SearchPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WebDriverFactory$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WebDriverFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Task02Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -93,7 +78,7 @@
             <entry file="file://$PROJECT_DIR$/README.md">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="153">
-                  <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+                  <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
                 </state>
               </provider>
             </entry>
@@ -180,8 +165,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/automationpractice/WebDriverFactory/engine/WebDriverFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/automationpractice/pages/OrderPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/automationpractice/Task02Test.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/automationpractice/WebDriverFactory/engine/DriverTypes.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -542,7 +527,7 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
         </state>
       </provider>
     </entry>
