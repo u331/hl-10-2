@@ -1,10 +1,14 @@
-import org.openqa.selenium.By;
+package com.automationpractice;
+
+import com.automationpractice.WebDriverFactory.engine.DriverTypes;
+import com.automationpractice.WebDriverFactory.engine.WebDriverFactory;
+import com.automationpractice.pages.OrderPage;
+import com.automationpractice.pages.Page;
+import com.automationpractice.pages.SearchPage;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Wait;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -16,11 +20,6 @@ public class Task02Test {
     private Page mainPage;
     private SearchPage searchPage;
     private OrderPage orderPage;
-    String aaa = new String("27");
-
-    //final Wait<WebDriver> wait = new WebDriverWait(driver, 5, 5000);
-    //private Wait<WebDriver> wait;
-
 
     @BeforeMethod
     public void beforeMethod(){
@@ -43,14 +42,14 @@ public class Task02Test {
                 searchPage.clickViewListA()
                         .clickAddToCartA()
                         .clickProceedToCheckoutA();
-
-        orderPage =
-                orderPage.clickFirstItemAddA();
-        System.out.println(orderPage.getFirstItemTotalProductPriceByExpected("$54.00"));
-//        Wait<WebDriver> wait = new WebDriverWait(driver, 5, 5000);
-        //wait.until(ExpectedConditions.textToBePresentInElementLocated(By.cssSelector("#cart_summary tr.first_item td.cart_total span"),"54"));
-//        System.out.println(orderPage.getFirstItemTotalProductPriceByExpected("54"));
-
+        orderPage.clickFirstItemAddA();
+        SoftAssert as = new SoftAssert();
+        as.assertEquals(54D, Double.parseDouble(orderPage.getFirstItemTotalProductPriceByExpected("$54.00").substring(1)), 0.0001);
+        as.assertEquals(54D, Double.parseDouble(orderPage.getTotalProductByExpected("$54.00").substring(1)), 0.0001);
+        as.assertEquals(2D, Double.parseDouble(orderPage.getTotalShippingByExpected("$2.00").substring(1)), 0.0001);
+        as.assertEquals(56D, Double.parseDouble(orderPage.getTotalPriceWithoutTaxByExpected("$56.00").substring(1)), 0.0001);
+        as.assertEquals(56D, Double.parseDouble(orderPage.getTotalPriceByExpected("$56.00").substring(1)), 0.0001);
+        as.assertAll();
     }
 
 

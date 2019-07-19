@@ -1,4 +1,5 @@
-import org.openqa.selenium.By;
+package com.automationpractice.pages;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,7 +14,6 @@ public class OrderPage {
 //    private Wait<WebDriver> wait = new WebDriverWait(driver, 5, 5000);
     private String sss = "sss";
     private Wait<WebDriver> wait;
-
 
     @FindBy(css = "#cart_summary tr.first_item *[title='Add']")
 //    @FindBy(css = "#cart_summary tr.first_item a.cart_quantity_up")
@@ -34,7 +34,6 @@ public class OrderPage {
     @FindBy(id = "total_price")
     private WebElement totalPrice;
 
-
     //    Constructor
     public OrderPage(WebDriver driver) {
         this.driver = driver;
@@ -43,17 +42,38 @@ public class OrderPage {
     }
 
     public OrderPage clickFirstItemAddA(){
-        //try {Thread.sleep(5000);} catch (InterruptedException e) {e.printStackTrace();}
         firstItemAddA.click();
         return this;
     }
 
     public String getFirstItemTotalProductPriceByExpected(String expected) {
         wait.until(ExpectedConditions.textToBePresentInElement( firstItemTotalProductPrice ,  expected)); //need to replace condition
-        System.out.println(expected + "yyy" + sss);
         //try {Thread.sleep(2000);} catch (InterruptedException e) {e.printStackTrace();}
         return firstItemTotalProductPrice.getText();
     }
 
+    public String getTotalProductByExpected(String expected) {
+        wait.until(ExpectedConditions.textToBePresentInElement( totalProduct ,  expected)); //need to replace condition
+        //try {Thread.sleep(2000);} catch (InterruptedException e) {e.printStackTrace();}
+        return totalProduct.getText();
+    }
+
+    public String getTotalShippingByExpected(String expected) {
+        wait.until(ExpectedConditions.textToBePresentInElement( totalShipping ,  expected)); //need to replace condition
+        //try {Thread.sleep(2000);} catch (InterruptedException e) {e.printStackTrace();}
+        return totalShipping.getText();
+    }
+
+    public String getTotalPriceWithoutTaxByExpected(String expected) {
+        wait.until(ExpectedConditions.textToBePresentInElement( totalPriceWithoutTax ,  expected)); //need to replace condition
+        //try {Thread.sleep(2000);} catch (InterruptedException e) {e.printStackTrace();}
+        return totalPriceWithoutTax.getText();
+    }
+
+    public String getTotalPriceByExpected(String expected) {
+        wait.until(ExpectedConditions.textToBePresentInElement( totalPrice ,  expected)); //need to replace condition
+        //try {Thread.sleep(2000);} catch (InterruptedException e) {e.printStackTrace();}
+        return totalPrice.getText();
+    }
 
 }

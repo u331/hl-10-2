@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e3f4d8a-529d-4d7e-8301-098d71613c2b" name="Default Changelist" comment="">
+    <list default="true" id="3e3f4d8a-529d-4d7e-8301-098d71613c2b" name="Default Changelist" comment="alpha 2019-07-17_13-24-39">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/OrderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OrderPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Task02Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Task02Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/OrderPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/OrderPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Task02Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Task02Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automationpractice/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DriverTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automationpractice/WebDriverFactory/engine/DriverTypes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OrderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automationpractice/pages/OrderPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automationpractice/pages/Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automationpractice/pages/SearchPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WebDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automationpractice/WebDriverFactory/engine/WebDriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Task02Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automationpractice/Task02Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Config.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DriverTypes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/OrderPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Page.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SearchPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WebDriverFactory$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WebDriverFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Task02Test.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,23 +32,23 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.46597537">
+    <splitter split-orientation="horizontal" split-proportion="0.59566325">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/pom.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="11" selection-start-line="11" selection-end-line="11" />
+                <state relative-caret-position="221">
+                  <caret line="13" column="31" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="31" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/Page.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/automationpractice/pages/Page.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="29" />
+                <state relative-caret-position="204">
+                  <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="11" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -45,10 +57,31 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/WebDriverFactory.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/automationpractice/WebDriverFactory/engine/WebDriverFactory.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="13" selection-start-line="13" selection-end-line="13" />
+                <state relative-caret-position="136">
+                  <caret line="8" column="29" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="29" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/automationpractice/WebDriverFactory/engine/DriverTypes.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="34">
+                  <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/automationpractice/Task02Test.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="510">
+                  <caret line="45" column="18" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="18" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -57,10 +90,19 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/test/java/Task02Test.java">
+            <entry file="file://$PROJECT_DIR$/README.md">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-17">
-                  <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+                <state relative-caret-position="153">
+                  <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/automationpractice/Config.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="255">
+                  <caret line="15" selection-start-line="15" selection-end-line="18" selection-end-column="5" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -73,10 +115,10 @@
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/Page.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/automationpractice/pages/Page.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="442">
-                  <caret line="29" selection-start-line="29" selection-end-line="29" />
+                  <caret line="31" selection-start-line="31" selection-end-line="31" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -85,22 +127,19 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/SearchPage.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/automationpractice/pages/SearchPage.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
+                <state relative-caret-position="68">
+                  <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/OrderPage.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/automationpractice/pages/OrderPage.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="442">
-                  <caret line="50" column="76" lean-forward="true" selection-start-line="50" selection-start-column="76" selection-end-line="50" selection-end-column="76" />
+                <state relative-caret-position="1326">
+                  <caret line="78" selection-start-line="78" selection-end-line="78" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -127,7 +166,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/page.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/test.properties" />
         <option value="$PROJECT_DIR$/src/main/java/Config.java" />
         <option value="$PROJECT_DIR$/src/main/java/DriverTypes.java" />
@@ -135,8 +173,15 @@
         <option value="$PROJECT_DIR$/src/main/java/Page.java" />
         <option value="$PROJECT_DIR$/src/main/java/SearchPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/testTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Task02Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/OrderPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Task02Test.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/automationpractice/WebDriverFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/automationpractice/WebDriverFactory/engine/WebDriverFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/automationpractice/pages/OrderPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/automationpractice/Task02Test.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/com/automationpractice/WebDriverFactory/engine/DriverTypes.java" />
       </list>
     </option>
   </component>
@@ -150,7 +195,80 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="hl-10-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hl-10-2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hl-10-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hl-10-2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hl-10-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hl-10-2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hl-10-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hl-10-2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hl-10-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hl-10-2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="automationpractice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hl-10-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hl-10-2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="automationpractice" type="462c0819:PsiDirectoryNode" />
+              <item name="engine" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hl-10-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hl-10-2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hl-10-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hl-10-2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hl-10-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hl-10-2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hl-10-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hl-10-2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="automationpractice" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
@@ -159,6 +277,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../AQA_Courses/pom.xml" />
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.automationpractice" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -220,10 +343,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task02Test (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="test10" />
+    <configuration name="Task02Test" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="hl-10-2" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Task02Test" />
+      <option name="MAIN_CLASS_NAME" value="com.automationpractice.Task02Test" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -232,9 +355,9 @@
       </method>
     </configuration>
     <configuration name="Task02Test" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="hl-10-2" />
+      <module name="test10" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Task02Test" />
+      <option name="MAIN_CLASS_NAME" value="com.automationpractice.Task02Test" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -274,57 +397,57 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Task02Test_(1) - 2019.07.16 at 22h 16m 39s.xml">
+    <history-entry file="Task02Test_(1) - 2019.07.19 at 15h 15m 04s.xml">
       <configuration name="Task02Test (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Task02Test_(1) - 2019.07.16 at 22h 18m 03s.xml">
+    <history-entry file="Task02Test_(1) - 2019.07.19 at 15h 15m 48s.xml">
       <configuration name="Task02Test (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Task02Test_(1) - 2019.07.16 at 22h 19m 08s.xml">
+    <history-entry file="Task02Test_(1) - 2019.07.19 at 15h 16m 41s.xml">
       <configuration name="Task02Test (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Task02Test_(1) - 2019.07.16 at 22h 21m 48s.xml">
+    <history-entry file="Task02Test_(1) - 2019.07.19 at 15h 46m 43s.xml">
       <configuration name="Task02Test (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Task02Test_(1) - 2019.07.16 at 22h 22m 58s.xml">
+    <history-entry file="Task02Test_(1) - 2019.07.19 at 15h 57m 16s.xml">
       <configuration name="Task02Test (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Task02Test_(1) - 2019.07.16 at 22h 24m 40s.xml">
+    <history-entry file="Task02Test_(1) - 2019.07.19 at 16h 23m 23s.xml">
       <configuration name="Task02Test (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Task02Test_(1) - 2019.07.16 at 22h 27m 33s.xml">
+    <history-entry file="Task02Test_(1) - 2019.07.19 at 16h 23m 28s.xml">
       <configuration name="Task02Test (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Task02Test_(1) - 2019.07.16 at 22h 29m 46s.xml">
-      <configuration name="Task02Test (1)" configurationId="TestNG" />
+    <history-entry file="Task02Test - 2019.07.19 at 16h 42m 45s.xml">
+      <configuration name="Task02Test" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Task02Test_(1) - 2019.07.16 at 22h 31m 10s.xml">
-      <configuration name="Task02Test (1)" configurationId="TestNG" />
+    <history-entry file="Task02Test - 2019.07.19 at 16h 43m 47s.xml">
+      <configuration name="Task02Test" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Task02Test_(1) - 2019.07.17 at 09h 57m 55s.xml">
-      <configuration name="Task02Test (1)" configurationId="TestNG" />
+    <history-entry file="Task02Test - 2019.07.19 at 16h 44m 43s.xml">
+      <configuration name="Task02Test" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="0" width="1936" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17750533" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1641791" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.248104" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.248104" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32936078" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.22968581" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -333,24 +456,11 @@
       <window_info anchor="right" id="Palette&#9;" order="5" />
     </layout>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="alpha 2019-07-17_13-24-39" />
+    <option name="LAST_COMMIT_MESSAGE" value="alpha 2019-07-17_13-24-39" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DriverTypes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/test.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -358,60 +468,81 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/automationpractice/pages/SearchPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/automationpractice/pages/OrderPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1326">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="221">
+          <caret line="13" column="31" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/WebDriverFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/automationpractice/Task02Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="45" column="18" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/automationpractice/WebDriverFactory/engine/WebDriverFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/automationpractice/pages/Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/automationpractice/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/automationpractice/WebDriverFactory/engine/DriverTypes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Page.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SearchPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Task02Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/OrderPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="50" column="76" lean-forward="true" selection-start-line="50" selection-start-column="76" selection-end-line="50" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
         </state>
       </provider>
     </entry>
