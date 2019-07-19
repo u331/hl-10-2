@@ -1,15 +1,17 @@
 package com.automationpractice;
 
+//Task
+//Имплементировать домашку с 9 го урока с возможностю запуска с 3х сбаузеров
+// используя Duilder, Page Factory, WebDriver factory и WebDriver manager
+
 import com.automationpractice.WebDriverFactory.engine.DriverTypes;
 import com.automationpractice.WebDriverFactory.engine.WebDriverFactory;
 import com.automationpractice.pages.OrderPage;
 import com.automationpractice.pages.Page;
 import com.automationpractice.pages.SearchPage;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
-
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -21,7 +23,8 @@ public class Task02Test {
     private SearchPage searchPage;
     private OrderPage orderPage;
 
-    @BeforeMethod
+//    @BeforeMethod
+    @BeforeTest
     public void beforeMethod(){
         driver = WebDriverFactory.getDriver(DriverTypes.CHROME);
         driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
@@ -52,7 +55,14 @@ public class Task02Test {
         as.assertAll();
     }
 
-
+//    @AfterMethod
+    @AfterTest
+    public void cleanup() {
+        driver.manage().deleteAllCookies();
+        //TestHelper.sleep5Seconds();
+        try {Thread.sleep(5000);} catch (InterruptedException e) {e.printStackTrace();}
+        driver.close();
+    }
 
 
 
