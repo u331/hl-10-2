@@ -34,6 +34,15 @@ public class OrderPage {
     @FindBy(id = "total_price")
     private WebElement totalPrice;
 
+
+        //chromeDriver.findElement(By.cssSelector("#cart_summary tr.first_item td.cart_delete a")).click();
+    @FindBy(css = "#cart_summary tr.first_item td.cart_delete a")
+    private WebElement firstItemCartDeleteA;
+
+    @FindBy(css = "#center_column .alert-warning")
+    private WebElement alertWarning;
+
+
     //    Constructor
     public OrderPage(WebDriver driver) {
         this.driver = driver;
@@ -74,6 +83,20 @@ public class OrderPage {
         wait.until(ExpectedConditions.textToBePresentInElement( totalPrice ,  expected)); //need to replace condition
         //try {Thread.sleep(2000);} catch (InterruptedException e) {e.printStackTrace();}
         return totalPrice.getText();
+    }
+
+    public Boolean isTotalPriceEqualsExpected(String expected){
+        return getTotalPriceByExpected(expected).equalsIgnoreCase(expected);
+    }
+
+    public OrderPage clickFirstItemCartDeleteA(){
+        firstItemCartDeleteA.click();
+        return this;
+    }
+
+    public Boolean isAlertWarning(){
+        wait.until(ExpectedConditions.visibilityOf(alertWarning));
+        return alertWarning.getText().equalsIgnoreCase("Your shopping cart is empty.");
     }
 
 }
