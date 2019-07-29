@@ -37,22 +37,19 @@ public class Task02Test {
     public void testLesson10(){
 
         String searchInputText = "Blouse";
-        String firstItemTotalProductPriceActual;
         String firstItemTotalProductPriceExpected = "$54.00";
-        String totalProductActual;
         String totalProductExpected = "$54.00";
-        String totalShippingActual;
         String totalShippingExpected = "$2.00";
-        String totalPriceWithoutTaxActual;
         String totalPriceWithoutTaxExpected = "$56.00";
-        String totalPriceActual;
         String totalPriceExpected = "$56.00";
+
+        SoftAssert as = new SoftAssert();
 
         //driver.navigate().to(MAIN_PAGE_URL);
         driver.get(config.getProperty("baseurl"));
         mainPage = new Page(driver);
         searchPage =
-                mainPage.inputTextToSearchInput("Blouse")
+                mainPage.inputTextToSearchInput(searchInputText)
                         .clickSearchSubmit();
         orderPage =
                 searchPage.clickViewListA()
@@ -60,28 +57,14 @@ public class Task02Test {
                         .clickProceedToCheckoutA();
         orderPage.clickFirstItemAddA();
 
-        firstItemTotalProductPriceActual = orderPage.getFirstItemTotalProductPriceByExpected(firstItemTotalProductPriceExpected);
-
-        totalProductActual = orderPage.getTotalProductByExpected(totalProductExpected);
-        totalShippingActual = orderPage.getTotalShippingByExpected(totalShippingExpected);
-        totalPriceWithoutTaxActual = orderPage.getTotalPriceWithoutTaxByExpected(totalPriceWithoutTaxExpected);
-        totalPriceActual = orderPage.getTotalPriceByExpected(totalPriceExpected);
+        as.assertTrue(orderPage.isFirstItemTotalProductPriceEqualsExpected(firstItemTotalProductPriceExpected));
+        as.assertTrue(orderPage.isTotalProductEqualsExpected(totalProductExpected));
+        as.assertTrue(orderPage.isTotalShippingEqualsExpected(totalShippingExpected));
+        as.assertTrue(orderPage.isTotalPriceWithoutTaxEqualsExpected(totalPriceWithoutTaxExpected));
+        as.assertTrue(orderPage.isTotalPriceEqualsExpected(totalPriceExpected));
 
         orderPage.clickFirstItemCartDeleteA();
 
-
-        SoftAssert as = new SoftAssert();
-        //as.assertEquals(54D, Double.parseDouble(orderPage.getFirstItemTotalProductPriceByExpected("$54.00").substring(1)), 0.0001);
-        as.assertEquals(firstItemTotalProductPriceActual, firstItemTotalProductPriceExpected);
-        //as.assertEquals(54D, Double.parseDouble(orderPage.getTotalProductByExpected("$54.00").substring(1)), 0.0001);
-        as.assertEquals(totalProductActual, totalProductExpected);
-        //as.assertEquals(2D, Double.parseDouble(orderPage.getTotalShippingByExpected("$2.00").substring(1)), 0.0001);
-        as.assertEquals(totalShippingActual, totalShippingExpected);
-        //as.assertEquals(56D, Double.parseDouble(orderPage.getTotalPriceWithoutTaxByExpected("$56.00").substring(1)), 0.0001);
-        as.assertEquals(totalPriceWithoutTaxActual, totalPriceWithoutTaxExpected);
-        //as.assertEquals(56D, Double.parseDouble(orderPage.getTotalPriceByExpected("$56.00").substring(1)), 0.0001);
-        as.assertEquals(totalPriceActual, totalPriceExpected);
-    //as.assertTrue(orderPage.isTotalPriceEqualsExpected());
         as.assertTrue(orderPage.isAlertWarning());
         as.assertAll();
     }
@@ -94,10 +77,5 @@ public class Task02Test {
         try {Thread.sleep(5000);} catch (InterruptedException e) {e.printStackTrace();}
         driver.close();
     }
-
-
-
-
-
 
 }

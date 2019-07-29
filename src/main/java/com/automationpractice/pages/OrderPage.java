@@ -34,7 +34,6 @@ public class OrderPage {
     @FindBy(id = "total_price")
     private WebElement totalPrice;
 
-
         //chromeDriver.findElement(By.cssSelector("#cart_summary tr.first_item td.cart_delete a")).click();
     @FindBy(css = "#cart_summary tr.first_item td.cart_delete a")
     private WebElement firstItemCartDeleteA;
@@ -55,38 +54,52 @@ public class OrderPage {
         return this;
     }
 
-    public String getFirstItemTotalProductPriceByExpected(String expected) {
+    public String getFirstItemTotalProductPrice(String expected) {
         wait.until(ExpectedConditions.textToBePresentInElement( firstItemTotalProductPrice ,  expected)); //need to replace condition
         //try {Thread.sleep(2000);} catch (InterruptedException e) {e.printStackTrace();}
         return firstItemTotalProductPrice.getText();
     }
 
-    public String getTotalProductByExpected(String expected) {
+    public Boolean isFirstItemTotalProductPriceEqualsExpected(String expected) {
+        //wait.until(ExpectedConditions.textToBePresentInElement( firstItemTotalProductPrice ,  expected)); //need to replace condition
+        //return firstItemTotalProductPrice.getText().equalsIgnoreCase(expected);
+        return getFirstItemTotalProductPrice(expected).equalsIgnoreCase(expected);
+    }
+
+    public String getTotalProduct(String expected) {
         wait.until(ExpectedConditions.textToBePresentInElement( totalProduct ,  expected)); //need to replace condition
-        //try {Thread.sleep(2000);} catch (InterruptedException e) {e.printStackTrace();}
         return totalProduct.getText();
     }
 
-    public String getTotalShippingByExpected(String expected) {
+    public Boolean isTotalProductEqualsExpected(String expected) {
+        return getTotalProduct(expected).equalsIgnoreCase(expected);
+    }
+
+    public String getTotalShipping(String expected) {
         wait.until(ExpectedConditions.textToBePresentInElement( totalShipping ,  expected)); //need to replace condition
-        //try {Thread.sleep(2000);} catch (InterruptedException e) {e.printStackTrace();}
         return totalShipping.getText();
     }
 
-    public String getTotalPriceWithoutTaxByExpected(String expected) {
+    public Boolean isTotalShippingEqualsExpected(String expected) {
+        return getTotalShipping(expected).equalsIgnoreCase(expected);
+    }
+
+    public String getTotalPriceWithoutTax(String expected) {
         wait.until(ExpectedConditions.textToBePresentInElement( totalPriceWithoutTax ,  expected)); //need to replace condition
-        //try {Thread.sleep(2000);} catch (InterruptedException e) {e.printStackTrace();}
         return totalPriceWithoutTax.getText();
     }
 
-    public String getTotalPriceByExpected(String expected) {
+    public Boolean isTotalPriceWithoutTaxEqualsExpected(String expected) {
+        return getTotalPriceWithoutTax(expected).equalsIgnoreCase(expected);
+    }
+
+    public String getTotalPrice(String expected) {
         wait.until(ExpectedConditions.textToBePresentInElement( totalPrice ,  expected)); //need to replace condition
-        //try {Thread.sleep(2000);} catch (InterruptedException e) {e.printStackTrace();}
         return totalPrice.getText();
     }
 
     public Boolean isTotalPriceEqualsExpected(String expected){
-        return getTotalPriceByExpected(expected).equalsIgnoreCase(expected);
+        return getTotalPrice(expected).equalsIgnoreCase(expected);
     }
 
     public OrderPage clickFirstItemCartDeleteA(){
